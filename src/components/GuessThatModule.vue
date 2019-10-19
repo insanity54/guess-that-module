@@ -119,14 +119,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   .gtm-left {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 55vh;
   }
   .gtm-right {
-    width: 50vw;
+    display: block;
+    width: auto;
+    height: 45vh;
   }
   .gtm-input-wrapper {
     display: flex;
@@ -136,14 +140,18 @@
     align-items: stretch;
   }
   .gtm-image {
-    height: 100%;
+    display: inline-block;
+    max-width: 45vw;
+    max-height: 45vh;
+    height: auto;
+    width: auto;
   }
   .gtm-image-wrapper {
-    height: 75vh;
-    width: 50vw;
+    height: 40vh;
+    width: 60vw;
   }
   .gtm-button {
-    background-color: #86cecb; /* Green */
+    background-color: #86cecb;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -156,11 +164,12 @@
   .gtm-statistics p {
     font-size: 18px;
     font-weight: bold;
+    width: 100vw;
   }
   .gtm-statistics {
     background-color: #bec8d1;
-    margin: 1em 0 1em 0;
-    padding: 1em 0 1em 0;
+    margin: 1vh 0 1vh 0;
+    padding: 1vh 0 1vh 0;
   }
 
   /*
