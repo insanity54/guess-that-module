@@ -1,29 +1,14 @@
 # guess-that-module
 
-## Project setup
-```
-npm install
-```
+## About
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Guess that module is a quiz for Hatsune Miku Fans. The goal is to correctly guess the name of as many modules as possible. Made using Vue.js and CSS Flexbox.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### References
 
-### Run your tests
-```
-npm run test
-```
+  * https://www.ign.com/wikis/hatsune-miku-project-diva-f/Modules
+  * http://miku.sega.jp/f2/ps3/en/module.html
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Special thanks
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  * Sharktimes#4248 on Discord for offering great CSS tweaks

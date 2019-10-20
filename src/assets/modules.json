@@ -131,6 +131,191 @@
     {
       "name": "Snow Miku 2013 Alt",
       "image": "F-snowmiku2013as.png"
+    },
+    {
+      "name": "Avant-garde",
+      "image": "module_avantguard.jpg",
+      "designer": "Kuuma"
+    },
+    {
+      "name": "Vintage Dress",
+      "image": "module_vintage.jpg",
+      "designer": "Sakurau & Alice"
+    },
+    {
+      "name": "Colorful Gumdrop",
+      "image": "module_colorful.jpg",
+      "designer": "nezuki"
+    },
+    {
+      "name": "Magical Mirai",
+      "image": "module_magical.jpg",
+      "designer": "Chris"
+    },
+    {
+      "name": "Siren",
+      "image": "module_siren.jpg",
+      "designer": "wogura"
+    },
+    {
+      "name": "Liar",
+      "image": "module_lier.jpg",
+      "designer": "gorou_"
+    },
+    {
+      "name": "Kitty Cat",
+      "image": "module_nyanko.jpg",
+      "designer": "Pontaro"
+    },
+    {
+      "name": "Heart Hunter",
+      "image": "module_hearthunter.jpg",
+      "designer": "Takumi Torigoe"
+    },
+    {
+      "name": "White Dress",
+      "image": "module_whitedress.jpg",
+      "designer": "y z k"
+    },
+    {
+      "name": "Regret",
+      "image": "module_regret.jpg",
+      "designer": "Yamako"
+    },
+    {
+      "name": "Marionette",
+      "image": "module_marionette.jpg",
+      "designer": "Yamako"
+    },
+    {
+      "name": "Chat Noir",
+      "image": "module_chatnoir.jpg",
+      "designer": "Tohma"
+    },
+    {
+      "name": "Conflicted",
+      "image": "module_conflict.jpg",
+      "designer": "redjuice"
+    },
+    {
+      "name": "Rainbow Lines",
+      "image": "module_nanairo.jpg",
+      "designer": "TNSK"
+    },
+    {
+      "name": "Supreme",
+      "image": "module_supreme.jpg",
+      "designer": "redjuice"
+    },
+    {
+      "name": "Orbit",
+      "image": "module_orbit.jpg",
+      "designer": "refeia"
+    },
+    {
+      "name": "Rosa Bianca",
+      "image": "module_rosabianca.jpg",
+      "designer": "Ittomaru"
+    },
+    {
+      "name": "Breathe With You",
+      "image": "module_blessyou.jpg",
+      "designer": "Siracomgi"
+    },
+    {
+      "name": "Hatsune Miku V3",
+      "image": "module_v3.jpg",
+      "designer": "iXima"
+    },
+    {
+      "name": "Gothic",
+      "image": "module_gothic.jpg",
+      "designer": "KARASU-R"
+    },
+    {
+      "name": "Dimensional",
+      "image": "module_dimension.jpg",
+      "designer": "BUZZ"
+    },
+    {
+      "name": "Demons and the Dead",
+      "image": "module_rasetsu.jpg",
+      "designer": "Hachi"
+    },
+    {
+      "name": "Meteorite",
+      "image": "module_meteor.jpg",
+      "designer": "SOE"
+    },
+    {
+      "name": "Magician",
+      "image": "module_magician.jpg",
+      "designer": "Kenji Hirabaru"
+    },
+    {
+      "name": "Out and About",
+      "image": "module_osanpo.jpg",
+      "designer": "DLEI"
+    },
+    {
+      "name": "Orange Blossom",
+      "image": "module_orange.jpg",
+      "designer": "Nidy-2D-"
+    },
+    {
+      "name": "Hana-Kotoba",
+      "image": "module_hanakotoba.jpg",
+      "designer": "72"
+    },
+    {
+      "name": "Kasha",
+      "image": "module_kasha.jpg",
+      "designer": "72"
+    },
+    {
+      "name": "Little Red",
+      "image": "module_mikuzukin.jpg",
+      "designer": "Tda"
+    },
+    {
+      "name": "Urban Pop",
+      "image": "module_streetpop.jpg",
+      "designer": "Komu24"
+    },
+    {
+      "name": "Puffy Pastels",
+      "image": "module_yurufuwa.jpg",
+      "designer": "Yunii"
+    },
+    {
+      "name": "School",
+      "image": "module_school.jpg",
+      "designer": "Ichika Eto"
+    },
+    {
+      "name": "Hatsune Miku Butterfly",
+      "image": "module_chou.jpg",
+      "designer": ""
+    },
+    {
+      "name": "School Noble",
+      "image": "module_noble.jpg",
+      "designer": "Eika"
+    },
+    {
+      "name": "Moonlight Butterfly",
+      "image": "module_gekkoageha.jpg",
+      "designer": "Ebina"
+    },
+    {
+      "name": "Natural",
+      "image": "module_natural.jpg",
+      "designer": "KEI"
+    },
+    {
+      "name": "∞",
+      "image": "module_mugen.jpg",
+      "designer": "cosMo@Bousou P"
     }
   ]
 }

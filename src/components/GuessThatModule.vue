@@ -10,6 +10,8 @@
     </div>
     <div class="gtm-right">
       <div class="gtm-statistics">
+        <span class="progress">{{ currentQuestionIndex }}/{{ totalQuestions }}</span>
+
         <h2>Score</h2>
         <p>Correct: {{ numberOfCorrectAnswers }} Incorrect: {{ numberOfIncorrectAnswers }}</p>
         <p v-if="isGameOver">Percentage: {{ calculatePercentage(numberOfCorrectAnswers, totalQuestions) }}%</p>
@@ -49,6 +51,9 @@
       },
       isGameOver: function() {
         return ((this.numberOfCorrectAnswers + this.numberOfIncorrectAnswers) === (this.modules.length)) ? true : false;
+      },
+      currentQuestionIndex: function() {
+        return (this.moduleCounter+1)
       }
     },
     methods: {
@@ -114,6 +119,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .progress {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   .guess-that-module {
     display: flex;
     flex-direction: row;
@@ -132,6 +141,9 @@
     width: auto;
     height: 45vh;
   }
+  .gtm-heading-wrapper {
+    height: 10vh;
+  }
   .gtm-input-wrapper {
     display: flex;
     flex-direction: row;
@@ -139,16 +151,13 @@
     justify-content: center;
     align-items: stretch;
   }
-  .gtm-image {
-    display: inline-block;
-    max-width: 45vw;
-    max-height: 45vh;
-    height: auto;
-    width: auto;
-  }
   .gtm-image-wrapper {
-    height: 40vh;
-    width: 60vw;
+    height: 45vh;
+    width: 50vw;
+  }
+  .gtm-image-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
   }
   .gtm-button {
     background-color: #86cecb;
