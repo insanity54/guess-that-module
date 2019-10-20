@@ -1,16 +1,19 @@
 <template>
-  <div id="app">
-    <GuessThatModule/>
-  </div>
+<div id="app">
+  <GuessThatModule />
+  <GithubCorner />
+</div>
 </template>
 
 <script>
 import GuessThatModule from './components/GuessThatModule.vue'
+import GithubCorner from './components/GithubCorner.vue'
 
 export default {
   name: 'app',
   components: {
-    GuessThatModule
+    GuessThatModule,
+    GithubCorner
   }
 }
 </script>
@@ -19,6 +22,7 @@ export default {
 body {
   margin: 0;
 }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

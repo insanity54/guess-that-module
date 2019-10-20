@@ -160,7 +160,7 @@
     max-width: 100%;
   }
   .gtm-button {
-    background-color: #86cecb;
+    background-color: #137a7f;
     border: none;
     color: white;
     padding: 15px 32px;
