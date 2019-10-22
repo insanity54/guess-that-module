@@ -126,11 +126,13 @@
     },
     {
       "name": "Snow Miku 2013",
-      "image": "F-snowmiku2013.png"
+      "image": "F-snowmiku2013.png",
+      "designer" : "Nijita"
     },
     {
       "name": "Snow Miku 2013 Alt",
-      "image": "F-snowmiku2013as.png"
+      "image": "F-snowmiku2013as.png",
+      "designer" : "Nijita"
     },
     {
       "name": "Avant-garde",
@@ -316,6 +318,171 @@
       "name": "∞",
       "image": "module_mugen.jpg",
       "designer": "cosMo@Bousou P"
+    },
+    {
+      "name": "Demon Star",
+      "image": "X_module_demonstar.png",
+      "designer": "TNSK"
+    },
+    {
+      "name": "Snow Miku 2016",
+      "image": "Dlc_snowmiku2016.png",
+      "designer": "Otogi Kotatsu"
+    },
+    {
+      "name": "Cantatrice",
+      "image": "X_Module_Cantatrice.png",
+      "designer": "Yu"
+    },
+    {
+      "name": "Snow Miku 2010",
+      "image": "module_snowmiku2019.jpg",
+      "designer": "zzzzz"
+    },
+    {
+      "name": "Ultimate Miku",
+      "image": "X_module_ultimate_miku.png",
+      "designer": "Hidari"
+    },
+    {
+      "name": "Anode Electronica",
+      "image": "X_Module_Anode_Electronica.png",
+      "designer": "fuzichoco"
+    },
+    {
+      "name": "P4: Dancing All Night Miku",
+      "image": "Dlc_p4d.png",
+      "designer": "Shigenori Soejima (Atlus)"
+    },
+    {
+      "name": "Brilliant Butterfly",
+      "image": "X_module_beauty_miku.png",
+      "designer": "Shizuka Kitajima (ELECTROCUTICA)"
+    },
+    {
+      "name": "Sea Lily",
+      "image": "X_Module_Sea_Lily.png",
+      "designer": "Awashima"
+    },
+    {
+      "name": "Lollipop",
+      "image": "X_module_lolipop.png",
+      "designer": "honyalala"
+    },
+    {
+      "name": "Green Tanuki",
+      "image": "X_module_green_ponpoko.png",
+      "designer": "saine"
+    },
+    {
+      "name": "Pizzicato",
+      "image": "X_module_pizzicato.png",
+      "designer": "amemura"
+    },
+    {
+      "name": "Judgement",
+      "image": "X_module_judgement.png",
+      "designer": "Tama"
+    },
+    {
+      "name": "Snow Miku 2011",
+      "image": "Dlc_snowmiku2011.png",
+      "designer": "@TODO"
+    },
+    {
+      "name": "Snow Miku 2015",
+      "image": "Dlc_snowmiku2015.png",
+      "designer": "@TODO"
+    },
+    {
+      "name": "Racing Miku 2016",
+      "image": "Dlc_racingmiku2016.png",
+      "designer": "Dlc_racingmiku2016.png"
+    },
+    {
+      "name": "Twinkle Star",
+      "image": "X_module_cute_miku.png",
+      "designer": "Tama"
+    },
+    {
+      "name": "Silent Voice",
+      "image": "X_module_silent_voice.png",
+      "designer": "tokiti"
+    },
+    {
+      "name": "Engage",
+      "image": "X_module_engage.png",
+      "designer": "toi8"
+    },
+    {
+      "name": "Raspberryism",
+      "image": "X_module_raspberryism.png",
+      "designer": "AKIAKANE"
+    },
+    {
+      "name": "Layered Envy",
+      "image": "X_module_envy.png",
+      "designer": "SHIN-ICHI SATAKE"
+    },
+    {
+      "name": "Snow Miku 2012",
+      "image": "Dlc_snowmiku2012.png",
+      "designer": "Nanaka"
+    },
+    {
+      "name": "Cabin Attendant Style A",
+      "image": "Dlc_cabinattendantmiku-A.png",
+      "designer": "???"
+    },
+    {
+      "name": "Cabin Attendant Style 39",
+      "image": "Dlc_cabinattendantmiku-39.png",
+      "designer": "???"
+    },
+    {
+      "name": "Rockin' Stone",
+      "image": "Module_cool_miku.png",
+      "designer": "Nidy-2D-"
+    },
+    {
+      "name": "Bandaged Heart",
+      "image": "X_Module_Bandaged_Heart.png",
+      "designer": "gagame"
+    },
+    {
+      "name": "High Fever",
+      "image": "X_Module_High_Fever.png",
+      "designer": "PinocchioP"
+    },
+    {
+      "name": "Pumpkin Dream",
+      "image": "module_pumpkindream.jpg",
+      "designer": "Hachi"
+    },
+    {
+      "name": "Chopstick",
+      "image": "X_module_chopstick.png",
+      "designer": "Nagimiso"
+    },
+    {
+      "name": "Final Fusion",
+      "image": "X_module_final_fusion.png",
+      "designer": "Nagimiso"
+    },
+    {
+      "name": "Underhanded Green",
+      "image": "X_module_hikyou_green.png",
+      "designer": "Tamotsu Shinohara"
+    },
+    {
+      "name": "Snow Miku 2014",
+      "image": "Dlc_snowmiku2014.png",
+      "designer": "dera_fury"
+    },
+    {
+      "name": "Ivy Rabbit",
+      "image": "HMPDX_12-17-15_017.jpg",
+      "designer": "Rella"
     }
   ]
 }

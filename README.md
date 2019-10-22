@@ -10,6 +10,8 @@ Guess that module is a quiz for Hatsune Miku Fans. The goal is to correctly gues
 
   * https://www.ign.com/wikis/hatsune-miku-project-diva-f/Modules
   * http://miku.sega.jp/f2/ps3/en/module.html
+  * https://vocaloid.fandom.com/wiki/Hatsune_Miku_-Project_DIVA-_X/Modules
+  * https://vocaloid.fandom.com/wiki/Hatsune_Miku_-Project_DIVA-_Arcade_Future_Tone/Modules
 
 ### Special thanks
 
