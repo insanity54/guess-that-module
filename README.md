@@ -12,6 +12,8 @@ Guess that module is a quiz for Hatsune Miku Fans. The goal is to correctly gues
   * http://miku.sega.jp/f2/ps3/en/module.html
   * https://vocaloid.fandom.com/wiki/Hatsune_Miku_-Project_DIVA-_X/Modules
   * https://vocaloid.fandom.com/wiki/Hatsune_Miku_-Project_DIVA-_Arcade_Future_Tone/Modules
+  * https://projectdiva.wiki/wiki/List_of_Modules_(Future_Tone)
+  * https://vocaloid.fandom.com/wiki/Hatsune_Miku_-Project_DIVA-_(game)/Modules
 
 ### Special thanks
 
