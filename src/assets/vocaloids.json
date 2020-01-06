@@ -1,0 +1,401 @@
+{
+  "vocaloids": [
+    {
+      "name": "Zhiyu Moke",
+      "image": "zhiyu-moke.png"
+    },
+    {
+      "name": "Utatane Pilo",
+      "image": "utatane-pilo.jpeg"
+    },
+    {
+      "name": "Zhanyin Lorra",
+      "image": "zhanyin-lorra.png",
+      "designer": ""
+    },
+    {
+      "name": "Yuzuki Yukari",
+      "image": "yuzuki-yukari.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Yumemi Nemu",
+      "image": "yumemi-nemu.png",
+      "designer": ""
+    },
+    {
+      "name": "Yuezheng Longya",
+      "image": "yuezheng-longya.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Yowane Haku",
+      "image": "yowane-haku.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Yohioloid",
+      "image": "yohioloid.jpeg"
+    },
+    {
+      "name": "Yanhe",
+      "image": "yanhe.png",
+      "designer": ""
+    },
+    {
+      "name": "Xin Hua",
+      "image": "xin-hua.jpeg"
+    },
+    {
+      "name": "VY1",
+      "image": "vy1.jpeg"
+    },
+    {
+      "name": "V-Flower",
+      "image": "v-flower.png",
+      "designer": ""
+    },
+    {
+      "name": "Uni",
+      "image": "uni-vocaloid.png",
+      "designer": ""
+    },
+    {
+      "name": "Tonio",
+      "image": "tonio.jpeg"
+    },
+    {
+      "name": "Tone Rion",
+      "image": "tone-rion.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Tehoku Zunko",
+      "image": "tehoku-zunko.png",
+      "designer": ""
+    },
+    {
+      "name": "Kasane Teto",
+      "image": "teto.png",
+      "designer": ""
+    },
+    {
+      "name": "Sweet Ann",
+      "image": "sweet-ann.png",
+      "designer": ""
+    },
+    {
+      "name": "Suzuki Tsudumi",
+      "image": "suzuki-tsudumi.webp"
+    },
+    {
+      "name": "Stardust",
+      "image": "stardust.png",
+      "designer": ""
+    },
+    {
+      "name": "Sonika",
+      "image": "sonika.png",
+      "designer": ""
+    },
+    {
+      "name": "SF A2",
+      "image": "sf-a2.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "SeeU",
+      "image": "SeeU.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Sato Sasara",
+      "image": "sato-sasara.png"
+    },
+    {
+      "name": "Sachiko",
+      "image": "sachiko.png"
+    },
+    {
+      "name": "Ryuto",
+      "image": "ryuto.jpeg"
+    },
+    {
+      "name": "Ruby",
+      "image": "ruby.jpeg"
+    },
+    {
+      "name": "Ring Suzune",
+      "image": "ring-suzune.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Kagamine Rin",
+      "image": "rin.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Rana",
+      "image": "rana.jpeg"
+    },
+    {
+      "name": "Prima",
+      "image": "prima.png"
+    },
+    {
+      "name": "Otomachi Una",
+      "image": "otomachi-una.png",
+      "designer" : ""
+    },
+    {
+      "name": "ONE",
+      "image": "one.webp",
+      "designer" : ""
+    },
+    {
+      "name": "Oliver",
+      "image": "oliver.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Akita Neru",
+      "image": "neru.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Nekomura Iroha",
+      "image": "nekomura-iroha.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Mo Qingxian",
+      "image": "mo-qingxian.png",
+      "designer": ""
+    },
+    {
+      "name": "Miriam",
+      "image": "miriam.png",
+      "designer": ""
+    },
+    {
+      "name": "Mirai Komachi",
+      "image": "mirai-komachi.png",
+      "designer": ""
+    },
+    {
+      "name": "Mew",
+      "image": "mew.png",
+      "designer": ""
+    },
+    {
+      "name": "Merli",
+      "image": "merli.png",
+      "designer": ""
+    },
+    {
+      "name": "MEIKO",
+      "image": "meiko.png",
+      "designer": ""
+    },
+    {
+      "name": "Meika Hime",
+      "image": "meika-hime.png",
+      "designer": ""
+    },
+    {
+      "name": "Mayu",
+      "image": "mayu.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Matcha",
+      "image": "matcha.png",
+      "designer": ""
+    },
+    {
+      "name": "Maika",
+      "image": "maika.png",
+      "designer": ""
+    },
+    {
+      "name": "Macne Sasayaki",
+      "image": "macne-sasayaki.jpg",
+      "designer": ""
+    },
+    {
+      "name": "Macne Nana",
+      "image": "macne-nana.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Luo Tianyi",
+      "image": "luo-tianyi.png",
+      "designer": ""
+    },
+    {
+      "name": "LUMI",
+      "image": "lumi.png",
+      "designer": ""
+    },
+    {
+      "name": "Megurine Luka",
+      "image": "Luka_v4x_final.png",
+      "designer": ""
+    },
+    {
+      "name": "Lola",
+      "image": "lola.png",
+      "designer": ""
+    },
+    {
+      "name": "Lily",
+      "image": "lily.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Leon",
+      "image": "leon.png",
+      "designer": ""
+    },
+    {
+      "name": "Kagamine Len",
+      "image": "len.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Kyo",
+      "image": "kyo.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Kuzuna Akari",
+      "image": "kuzuna-akari.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Kokone",
+      "image": "kokone.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "KAITO",
+      "image": "kaito.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Kaai Yuki",
+      "image": "kaai-yuki.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "IA",
+      "image": "ia.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Hiyama Kiyoteru",
+      "image": "hiyama-kiyoteru.png",
+      "designer": ""
+    },
+    {
+      "name": "Haruno Sora",
+      "image": "haruno-sora.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Haiyi",
+      "image": "haiyi.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "GUMI",
+      "image": "gumi.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Galaco",
+      "image": "galaco.png",
+      "designer": ""
+    },
+    {
+      "name": "Gackpoid",
+      "image": "gackpoid.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Fukase",
+      "image": "fukase.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "De",
+      "image": "de.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Daina",
+      "image": "Daina.png",
+      "designer": ""
+    },
+    {
+      "name": "Cyber Songman",
+      "image": "cyber-songman.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Cyber Diva",
+      "image": "cyber-diva.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "CUL",
+      "image": "CUL.png",
+      "designer": ""
+    },
+    {
+      "name": "Chris",
+      "image": "chris.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Big Al",
+      "image": "big-al.png",
+      "designer": ""
+    },
+    {
+      "name": "Azuki",
+      "image": "azuki.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Avanna",
+      "image": "avanna.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Arsloid",
+      "image": "arsloid.jpeg",
+      "designer": ""
+    },
+    {
+      "name": "Aoki Lapis",
+      "image": "aoki-lapis.png",
+      "designer": ""
+    },
+    {
+      "name": "Anon and Kanon",
+      "image": "anon-and-kanon",
+      "designer": ""
+    },
+    {
+      "name": "Alys",
+      "image": "alys.png",
+      "designer": ""
+    },
+    {
+      "name": "Hatsune Miku",
+      "image": "F-miku.png",
+      "designer": ""
+    }
+  ]
+}

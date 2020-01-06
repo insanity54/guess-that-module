@@ -1,18 +1,18 @@
 <template>
 <div id="app">
-  <GuessThatModule />
+  <Nav />
+  <router-view />
   <GithubCorner />
 </div>
 </template>
 
 <script>
-import GuessThatModule from './components/GuessThatModule.vue'
+import Nav from './components/Nav/Nav';
 import GithubCorner from './components/GithubCorner.vue'
-
 export default {
   name: 'app',
   components: {
-    GuessThatModule,
+    Nav,
     GithubCorner
   }
 }

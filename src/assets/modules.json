@@ -1,6 +1,10 @@
 {
   "modules": [
     {
+      "name": "Magical Mirai 2018",
+      "image": "ga_iwato_en.jpg"
+    },
+    {
       "name": "Original",
       "image": "F-miku.png"
     },
