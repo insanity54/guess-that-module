@@ -10,7 +10,7 @@
 
 bindir="$(dirname "$(readlink -fm "$0")")"
 cd "${bindir}/../../dist"
-find . -type f -exec curl --progress-bar --verbose --netrc-file ../.netrc -o ../publish.log -n -T {} --create-dirs https://neocities.org/webdav/{} \;
+find . -type f -exec curl --progress-bar --verbose --netrc-file ../.netrc -n -T {} --create-dirs https://neocities.org/webdav/{} \;
 
 if [ ! $? -eq 0 ]; then
   echo 'there was a problem while uploading files.'
