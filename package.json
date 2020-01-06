@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && npm run deploy:ghpages && npm run deploy:neocities",
+    "deploy": "npm run build && npm run deploy:neocities",
     "deploy:ghpages": "npx push-dir --dir=dist --branch=gh-pages --cleanup",
     "deploy:neocities": "bash src/util/neocitiesUpload.sh"
   },
