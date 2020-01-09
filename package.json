@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "npm run serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "npm run build && npm run deploy:neocities",
@@ -15,6 +16,7 @@
     "core-js": "^3.1.2",
     "globby": "^10.0.1",
     "json2md": "^1.6.5",
+    "material-design-icons-iconfont": "^5.0.1",
     "neocities": "0.0.3",
     "remark": "^11.0.1",
     "remark-parse": "^7.0.1",

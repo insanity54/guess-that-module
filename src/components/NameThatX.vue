@@ -1,19 +1,26 @@
 <template>
 <div class="guess-that-module">
   <div v-if="!begun">
-    <label for="testLengthInput">How many modules would you like to guess?</label>
-    <vue-slider v-model="testLength" :min="1" :max="modules.length"></vue-slider>
+    <label for="testLengthInput">How many {{ unit }} would you like to guess?</label>
+    <vue-slider v-model="testLength" :min="1" :max="subject.length"></vue-slider>
     <h2 class="fancy">{{ testLength }}</h2>
-    <div class="gtm-button" @click="doBegin">Begin</div>
+    <div class="ntx-button" @click="doBegin">Begin</div>
   </div>
   <div v-if="begun">
-    <div class="gtm-left">
-      <div class="gtm-heading-wrapper">
-        <h1 class="gtm-heading">Name That Module!</h1>
+    <div class="ntx-left">
+      <div class="ntx-heading-wrapper">
+        <span class="ntx-heading">{{ title }}</span>
+        <div class="audio-toggle" @click="isMuted = !isMuted">
+          <i v-if="!isMuted" class="material-icons">headset</i>
+          <i v-if="isMuted" class="material-icons">headset_off</i>
+        </div>
       </div>
-      <div class="gtm-image-wrapper">
-        <img v-if="!isGameOver" class="gtm-image" :src="moduleImage">
-        <div v-if="isGameOver" class="gtm-image">
+      <div v-if="!isGameOver" class="ntx-image-wrapper">
+        <img class="ntx-image" :src="moduleImage">
+        <img class="ntx-image hidden" :src="moduleImageOnDeck">
+      </div>
+      <div v-if="isGameOver" class="">
+        <div v-if="isGameOver" class="ntx-image">
           <p class="kanji">{{ finalGrade.kanji }}</p>
           <p class="kanji">{{ finalGrade.letter }}</p>
           <p class="percentage">{{ finalGrade.percentage }}</p>
@@ -21,8 +28,8 @@
         </div>
       </div>
     </div>
-    <div class="gtm-right">
-      <div class="gtm-statistics">
+    <div class="ntx-right">
+      <div class="ntx-statistics">
         <span class="progress">{{ progress }}</span>
 
         <h2>Score</h2>
@@ -30,12 +37,12 @@
         <p>Correct: {{ numberOfCorrectAnswers }} Incorrect: {{ numberOfIncorrectAnswers }}</p>
         <p v-if="isGameOver">Percentage: {{ calculatePercentage(numberOfCorrectAnswers, totalQuestions) }}%</p>
       </div>
-      <div class="gtm-input-wrapper">
-        <div v-if="!isGameOver" class="gtm-choices-wrapper">
-          <button v-for="choice in choiceButtons" :key="choice" @click="submitChoice(choice)" class="gtm-button">{{ choice }}</button>
+      <div class="ntx-input-wrapper">
+        <div v-if="!isGameOver" class="ntx-choices-wrapper">
+          <button v-for="choice in choiceButtons" :key="choice" @click="submitChoice(choice)" class="ntx-button">{{ choice }}</button>
         </div>
-        <div v-if="isGameOver" class="gtm-restart-wrapper">
-          <button class="gtm-button" @click="restartGame()">Restart</button>
+        <div v-if="isGameOver" class="ntx-restart-wrapper">
+          <button class="ntx-button" @click="restartGame()">Restart</button>
         </div>
       </div>
     </div>
@@ -46,9 +53,22 @@
 <script>
 import VueSlider from 'vue-slider-component'
 import 'vue-slider-component/theme/default.css'
-import modules from '../assets/modules.json';
 export default {
-  name: 'GuessThatModule',
+  name: 'NameThatX',
+  props: {
+    x: {
+      type: Object,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    unit: {
+      type: String,
+      required: true
+    }
+  },
   components: {
     VueSlider
   },
@@ -105,16 +125,20 @@ export default {
     },
     lastModuleName: function() {
       if (this.moduleCounter === 0) return '';
-      else return this.modules[this.moduleCounter - 1].name;
+      else return this.subject[this.moduleCounter - 1].name;
     },
     moduleImage: function() {
-      return this.modules[this.moduleCounter].image;
+      return this.subject[this.moduleCounter].image;
+    },
+    moduleImageOnDeck: function () {
+      if (this.moduleCounter === this.testLength-1) return null;
+      else return this.subject[this.moduleCounter+1].image;
     },
     totalQuestions: function() {
-      return this.modules.length;
+      return this.subject.length;
     },
     choiceButtons: function() {
-      let correctChoice = this.modules[this.moduleCounter].name;
+      let correctChoice = this.subject[this.moduleCounter].name;
       let choices = [];
       choices.push(correctChoice);
       for (var i = 0; i < 3; i++) {
@@ -124,23 +148,32 @@ export default {
       return this.shuffle(choices);
     },
     isGameOver: function() {
-      return ((this.numberOfCorrectAnswers + this.numberOfIncorrectAnswers) === (this.modules.length)) ? true : false;
+      return ((this.numberOfCorrectAnswers + this.numberOfIncorrectAnswers) === (this.subject.length)) ? true : false;
     },
     currentQuestionIndex: function() {
       return (this.moduleCounter + 1);
     }
   },
+  watch: {
+    '$route' () {
+      this.restartGame();
+    }
+  },
   methods: {
+    playAudio: function (clip) {
+      if (this.isMuted) return false;
+      else this.$root.$emit('play-audio', clip);
+    },
     doBegin: function () {
-      this.modules = this.modules.slice(0, this.testLength);
+      this.subject = this.subject.slice(0, this.testLength);
       this.begun = true;
     },
     calculatePercentage: function(num, totalNum) {
       return Math.floor(num / totalNum * 100);
     },
     getIncorrectChoice: function getIncorrectChoice() {
-      let incorrectIndex = Math.floor(Math.random() * ((this.modules.length - 1) + 1));
-      let incorrectChoice = this.modules[(incorrectIndex)].name;
+      let incorrectIndex = Math.floor(Math.random() * ((this.subject.length - 1) + 1));
+      let incorrectChoice = this.subject[(incorrectIndex)].name;
       return incorrectChoice;
     },
     getValidIncorrectChoice: function getValidIncorrectChoice(correctChoice, choicesSoFar) {
@@ -171,16 +204,18 @@ export default {
       return array;
     },
     nextQuestion: function() {
-      if (this.moduleCounter === (this.modules.length - 1)) return this.moduleCounter;
+      if (this.moduleCounter === (this.subject.length - 1)) return this.moduleCounter;
       return this.moduleCounter++;
     },
     submitChoice: function(choice) {
-      if (choice === this.modules[this.moduleCounter].name) {
+      if (choice === this.subject[this.moduleCounter].name) {
         this.isLastAnswerCorrect = true;
         this.numberOfCorrectAnswers++;
+        this.playAudio('affirmative');
       } else {
         this.isLastAnswerCorrect = false;
         this.numberOfIncorrectAnswers++;
+        this.playAudio('negative');
       }
       this.nextQuestion();
     },
@@ -188,6 +223,9 @@ export default {
       this.moduleCounter = 0;
       this.numberOfCorrectAnswers = 0;
       this.numberOfIncorrectAnswers = 0;
+      this.subject = this.shuffle(this.x.data);
+      this.testLength = (() => (this.x.data.length>39) ? 39 : (this.x.data.length/2))(this);
+      this.begun = false;
     }
   },
   created: function () {
@@ -197,10 +235,11 @@ export default {
       numberOfCorrectAnswers: 0,
       numberOfIncorrectAnswers: 0,
       moduleCounter: 0,
-      testLength: 39,
-      modules: this.shuffle(modules.modules),
+      testLength: (() => (this.x.data.length>39) ? 39 : (this.x.data.length/2))(),
+      subject: this.shuffle(this.x.data),
       isLastAnswerCorrect: true,
-      begun: false
+      begun: false,
+      isMuted: false,
     }
   }
 }
@@ -208,6 +247,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.audio-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+.hidden {
+  outline: 2px solid red;
+  box-shadow: 3px 3px 3px red;
+  position: absolute;
+  visibility: hidden;
+  z-index: -39;
+}
 @font-face {
   font-family: 'BubblegumSans';
   src: url('~@/assets/BubblegumSans-Regular.otf');
@@ -249,24 +299,26 @@ export default {
   flex-wrap: wrap;
 }
 
-.gtm-left {
+.ntx-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 55vh;
 }
 
-.gtm-right {
+.ntx-right {
   display: block;
   width: auto;
   height: 45vh;
 }
 
-.gtm-heading {
+.ntx-heading-wrapper {
+  display: flex;
+  flex-direction: row;
   font-size: 24px;
 }
 
-.gtm-input-wrapper {
+.ntx-input-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -274,17 +326,17 @@ export default {
   align-items: stretch;
 }
 
-.gtm-image-wrapper {
+.ntx-image-wrapper {
   height: 45vh;
   width: 50vw;
 }
 
-.gtm-image-wrapper img {
+.ntx-image-wrapper img {
   max-height: 100%;
   max-width: 100%;
 }
 
-.gtm-button {
+.ntx-button {
   background-color: #137a7f;
   border: none;
   color: white;
@@ -298,13 +350,13 @@ export default {
   cursor: pointer;
 }
 
-.gtm-statistics p {
+.ntx-statistics p {
   font-size: 18px;
   font-weight: bold;
   width: 100vw;
 }
 
-.gtm-statistics {
+.ntx-statistics {
   background-color: #bec8d1;
   margin: 1vh 0 1vh 0;
   padding: 1vh 0 1vh 0;

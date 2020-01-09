@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
-import GuessThatModule from '@/components/GuessThatModule';
-import NameThatVocaloid from '@/components/NameThatVocaloid';
+import NameThatX from '@/components/NameThatX';
+import vocaloids from '@/assets/vocaloids.json';
+import modules from '@/assets/modules.json';
 
 Vue.use(Router);
 
@@ -13,11 +14,21 @@ export default new Router({
     },
     {
       path: '/name-that-module',
-      component: GuessThatModule
+      component: NameThatX,
+      props: {
+        x: modules,
+        title: 'Name That Module!',
+        unit: 'modules'
+      }
     },
     {
       path: '/name-that-vocaloid',
-      component: NameThatVocaloid
+      component: NameThatX,
+      props: {
+        x: vocaloids,
+        title: 'Name That VOCALOID!',
+        unit: 'VOCALOIDS'
+      }
     }
   ]
 })

@@ -3,17 +3,20 @@
   <Nav />
   <router-view />
   <GithubCorner />
+  <AudioPlayer />
 </div>
 </template>
 
 <script>
-import Nav from './components/Nav/Nav';
-import GithubCorner from './components/GithubCorner.vue'
+import Nav from '@/components/Nav/Nav';
+import GithubCorner from '@/components/GithubCorner.vue';
+import AudioPlayer from '@/components/AudioPlayer.vue';
 export default {
   name: 'app',
   components: {
     Nav,
-    GithubCorner
+    GithubCorner,
+    AudioPlayer
   }
 }
 </script>
