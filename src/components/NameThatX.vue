@@ -16,8 +16,13 @@
         </div>
       </div>
       <div v-if="!isGameOver" class="ntx-image-wrapper">
-        <img class="ntx-image" :src="moduleImage">
-        <img class="ntx-image hidden" :src="moduleImageOnDeck">
+        <div v-for="s in subject" :key="s.name">
+          <transition name="slide-fade" mode="in-out">
+            <img v-if="s.isActive" :src="s.image" class="">
+          </transition>
+        </div>
+        <!-- <img class="ntx-image" :src="moduleImage">
+        <img class="ntx-image hidden" :src="moduleImageOnDeck"> -->
       </div>
       <div v-if="isGameOver" class="">
         <div v-if="isGameOver" class="ntx-image">
@@ -73,6 +78,9 @@ export default {
     VueSlider
   },
   computed: {
+    activeModule: function () {
+      return this.subject[this.moduleCounter];
+    },
     finalGrade: function() {
       // {{ currentQuestionIndex }}/{{ totalQuestions }}
       let percentage = this.calculatePercentage(this.numberOfCorrectAnswers, this.totalQuestions)
@@ -217,6 +225,8 @@ export default {
         this.numberOfIncorrectAnswers++;
         this.playAudio('negative');
       }
+      this.subject[this.moduleCounter].isActive = false;
+      this.subject[this.moduleCounter+1].isActive = true;
       this.nextQuestion();
     },
     restartGame: function() {
@@ -224,11 +234,14 @@ export default {
       this.numberOfCorrectAnswers = 0;
       this.numberOfIncorrectAnswers = 0;
       this.subject = this.shuffle(this.x.data);
+      this.subject[0].isActive = true;
       this.testLength = (() => (this.x.data.length>39) ? 39 : (this.x.data.length/2))(this);
       this.begun = false;
     }
   },
   created: function () {
+    this.x.data.map((d) => d.isActive = false);
+    this.x.data[0].isActive = true;
   },
   data: function() {
     return {
@@ -245,8 +258,29 @@ export default {
 }
 </script>
 
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter {
+/* .slide-fade-leave-active below version 2.1.8 */
+  transform: translateX(40px) scale(0.8);
+  opacity: 0;
+  z-index: -39;
+}
+.slide-fade-enter-to {
+  opacity: 1;
+  z-index: -39;
+}
+.slide-fade-leave-to {
+  transform: translateX(-40px) scale(1.2);
+  opacity: 0;
+}
 .audio-toggle {
   cursor: pointer;
   user-select: none;
@@ -273,6 +307,10 @@ export default {
   font-size: 4em;
   font-weight: bold;
   margin: 0;
+}
+
+.hide {
+  border: 3px solid purple;
 }
 
 .percentage {
@@ -334,6 +372,7 @@ export default {
 .ntx-image-wrapper img {
   max-height: 100%;
   max-width: 100%;
+  position: absolute;
 }
 
 .ntx-button {
