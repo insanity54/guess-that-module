@@ -33,10 +33,9 @@
         </div>
       </div>
     </div>
-    <div class="ntx-right">
+    <div class="ntx-controls">
       <div class="ntx-statistics">
         <span class="progress">{{ progress }}</span>
-
         <h2>Score</h2>
         <p v-if="!isLastAnswerCorrect" class="correction">Incorrect! The correct answer was, "{{ lastModuleName }}"</p>
         <p>Correct: {{ numberOfCorrectAnswers }} Incorrect: {{ numberOfIncorrectAnswers }}</p>
@@ -344,10 +343,10 @@ export default {
   height: 55vh;
 }
 
-.ntx-right {
-  display: block;
-  width: auto;
-  height: 45vh;
+.ntx-controls {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .ntx-heading-wrapper {
@@ -373,6 +372,7 @@ export default {
   max-height: 100%;
   max-width: 100%;
   position: absolute;
+  z-index: -5;
 }
 
 .ntx-button {
@@ -387,6 +387,7 @@ export default {
   margin: 0.2em;
   user-select: none;
   cursor: pointer;
+  z-index: 500;
 }
 
 .ntx-statistics p {
@@ -396,7 +397,7 @@ export default {
 }
 
 .ntx-statistics {
-  background-color: #bec8d1;
+  align-items: flex-start;
   margin: 1vh 0 1vh 0;
   padding: 1vh 0 1vh 0;
 }
