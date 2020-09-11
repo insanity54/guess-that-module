@@ -23,4 +23,4 @@ refer to src/assets/vocaloids.json and src/assets/modules.json
 
 ### Feedback
 
-If you have any suggestions, feel free to open an [issue](https://github.com/insanity54/guess-that-module/issues) or get a hold of me on Discord. I always hang out in https://discordapp.com/invite/vocaloid and my username is  `"DJ CrisP ▵⨯○□☆ #6052"`
+If you have any suggestions, feel free to open an [issue](https://github.com/insanity54/guess-that-module/issues) or get a hold of me on Discord. I always hang out in https://discordapp.com/invite/vocaloid and my username is  `"CJ Crispy #6052"`
